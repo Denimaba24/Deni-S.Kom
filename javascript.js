@@ -10,6 +10,9 @@ const contactForm = document.querySelector(".contact-form");
 const heroTitle = document.querySelector(".hero-content h1");
 const ctaButton = document.querySelector(".cta-button");
 
+// CV Section (section id: "cv")
+// Tidak perlu logic khusus karena navigasi dashboard sudah memakai mekanisme smooth-scroll umum.
+
 // Typing Effect for Hero Title
 function typeWriter(element, text, speed = 100) {
   let i = 0;
@@ -136,32 +139,38 @@ if (skillsSection) {
 contactForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  const name = contactForm.querySelector('input[type="text"]').value.trim();
-  const email = contactForm.querySelector('input[type="email"]').value.trim();
-  const message = contactForm.querySelector("textarea").value.trim();
+  const name = document.querySelector("#contact-name").value.trim();
+  const email = document.querySelector("#contact-email").value.trim();
+  const message = document.querySelector("#contact-message").value.trim();
 
   if (!name || !email || !message) {
-    alert("Please fill in all fields.");
+    alert("Mohon isi semua bidang.");
     return;
   }
 
   if (!isValidEmail(email)) {
-    alert("Please enter a valid email address.");
+    alert("Mohon masukkan alamat email yang valid.");
     return;
   }
 
-  // Simulate form submission
+  const recipient = "deni2021smgt@email.com";
+  const subject = encodeURIComponent(`Pesan dari ${name}`);
+  const body = encodeURIComponent(
+    `Nama: ${name}\nEmail: ${email}\n\nPesan:\n${message}`,
+  );
+  const mailtoLink = `mailto:${recipient}?subject=${subject}&body=${body}`;
+
+  window.location.href = mailtoLink;
+
   const submitBtn = contactForm.querySelector(".submit-btn");
   const originalText = submitBtn.textContent;
-  submitBtn.textContent = "Sending...";
+  submitBtn.textContent = "Membuka email...";
   submitBtn.disabled = true;
 
   setTimeout(() => {
-    alert("Thank you for your message! I will get back to you soon.");
-    contactForm.reset();
     submitBtn.textContent = originalText;
     submitBtn.disabled = false;
-  }, 2000);
+  }, 1000);
 });
 
 function isValidEmail(email) {
