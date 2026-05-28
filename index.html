@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deni - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Icon Dashboard Navigation - Tampilan Pertama -->
+    <div class="icon-dashboard" aria-label="Navigasi cepat">
+      <div class="icon-nav">
+        <a
+          href="#home"
+          class="icon-item"
+          data-target="home"
+          aria-label="Beranda"
+          title="Beranda"
+        >
+          <i class="fas fa-home"></i>
+        </a>
+        <a
+          href="#about"
+          class="icon-item"
+          data-target="about"
+          aria-label="Tentang"
+          title="Tentang"
+        >
+          <i class="fas fa-user"></i>
+        </a>
+        <a
+          href="#skills"
+          class="icon-item"
+          data-target="skills"
+          aria-label="Keterampilan"
+          title="Keterampilan"
+        >
+          <i class="fas fa-tools"></i>
+        </a>
+        <a
+          href="#projects"
+          class="icon-item"
+          data-target="projects"
+          aria-label="Proyek"
+          title="Proyek"
+        >
+          <i class="fas fa-folder-open"></i>
+        </a>
+        <a
+          href="#contact"
+          class="icon-item"
+          data-target="contact"
+          aria-label="Kontak"
+          title="Kontak"
+        >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Main Navigation (untuk desktop) -->
+    <header>
+      <nav>
+        <div class="logo">DENI</div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Halo, Saya <span class="highlight">DENI</span></h1>
+        <p class="subtitle">
+          Mahasiswa Informatika | Web Developer | Analis Data
+        </p>
+        <p class="description">
+          Berkomitmen menciptakan solusi elegan melalui kode dan analisis data.
+        </p>
+        <a href="#about" class="cta-button">Pelajari Lebih Lanjut</a>
+      </div>
+      <div class="hero-image">
+        <div class="hero-image">
+          <img src="deni.jpg" alt="Foto Deni" class="my-photo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section - Indonesian -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2>Tentang Saya</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Saya Deni, seorang mahasiswa Informatika yang berdedikasi dengan
+              passion terhadap teknologi dan inovasi. Perjalanan akademik saya
+              di bidang Informatika telah membekali saya dengan fondasi yang
+              kuat dalam prinsip ilmu komputer, pemrograman, dan analisis data.
+            </p>
+            <p>
+              Sepanjang perjalanan studi saya, saya telah mengembangkan
+              keterampilan lanjutan di Microsoft Excel dan Word, memungkinkan
+              saya untuk membuat spreadsheet kompleks, mengotomatisasi proses,
+              dan menghasilkan dokumentasi profesional. Pengalaman saya dalam
+              pengembangan web mencakup membangun website responsif menggunakan
+              HTML, CSS, dan JavaScript.
+            </p>
+            <p>
+              Saya berkomitmen untuk terus belajar dan menerapkan keterampilan
+              saya untuk memecahkan masalah dunia nyata, baik melalui kode yang
+              elegan maupun analisis data yang mendalam.
+            </p>
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <h3>2+</h3>
+              <p>Tahun Kuliah</p>
+            </div>
+            <div class="stat">
+              <h3>10+</h3>
+              <p>Proyek Selesai</p>
+            </div>
+            <div class="stat">
+              <h3>5+</h3>
+              <p>Keterampilan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section - Indonesian -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2>Keterampilan Saya</h2>
+        <div class="skills-grid">
+          <div class="skill-card" data-skill="excel">
+            <div class="skill-icon">
+              <i class="fas fa-file-excel"></i>
+            </div>
+            <h3>Microsoft Excel (Lanjutan)</h3>
+            <p>
+              Ahli dalam analisis data, rumus kompleks, pivot tables, macros,
+              dan pemrograman VBA untuk otomatisasi.
+            </p>
+            <div class="skill-tags">
+              <span>Pivot Table</span>
+              <span>Formula Lanjutan</span>
+              <span>VBA</span>
+            </div>
+            <div class="skill-level">
+              <div class="level-bar" data-level="95"></div>
+            </div>
+          </div>
+          <div class="skill-card" data-skill="word">
+            <div class="skill-icon">
+              <i class="fas fa-file-word"></i>
+            </div>
+            <h3>Microsoft Word (Lanjutan)</h3>
+            <p>
+              Mahir dalam format lanjutan, mail merge, otomatisasi dokumen, dan
+              membuat template profesional.
+            </p>
+            <div class="skill-tags">
+              <span>Template</span>
+              <span>Mail Merge</span>
+              <span>Dokumentasi</span>
+            </div>
+            <div class="skill-level">
+              <div class="level-bar" data-level="90"></div>
+            </div>
+          </div>
+          <div class="skill-card" data-skill="html">
+            <div class="skill-icon">
+              <i class="fab fa-html5"></i>
+            </div>
+            <h3>HTML5</h3>
+            <p>Semantic markup, aksesibilitas, dan standar web modern.</p>
+            <div class="skill-tags">
+              <span>Semantic</span>
+              <span>Aksesibilitas</span>
+              <span>Modern</span>
+            </div>
+            <div class="skill-level">
+              <div class="level-bar" data-level="85"></div>
+            </div>
+          </div>
+          <div class="skill-card" data-skill="css">
+            <div class="skill-icon">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <h3>CSS3</h3>
+            <p>
+              Responsive design, animasi, flexbox, grid, dan teknik styling
+              modern.
+            </p>
+            <div class="skill-tags">
+              <span>Responsive</span>
+              <span>Animasi</span>
+              <span>Grid & Flexbox</span>
+            </div>
+            <div class="skill-level">
+              <div class="level-bar" data-level="85"></div>
+            </div>
+          </div>
+          <div class="skill-card" data-skill="javascript">
+            <div class="skill-icon">
+              <i class="fab fa-js-square"></i>
+            </div>
+            <h3>JavaScript</h3>
+            <p>
+              Manipulasi DOM, ES6+, pemrograman asynchronous, dan aplikasi web
+              interaktif.
+            </p>
+            <div class="skill-tags">
+              <span>DOM</span>
+              <span>ES6+</span>
+              <span>Async</span>
+            </div>
+            <div class="skill-level">
+              <div class="level-bar" data-level="80"></div>
+            </div>
+          </div>
+          <div class="skill-card" data-skill="data">
+            <div class="skill-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>Analisis Data</h3>
+            <p>
+              Visualisasi data, analisis statistik, dan pengambilan insight dari
+              dataset kompleks.
+            </p>
+            <div class="skill-tags">
+              <span>Visualisasi</span>
+              <span>Statistik</span>
+              <span>Insight</span>
+            </div>
+            <div class="skill-level">
+              <div class="level-bar" data-level="85"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section - Indonesian -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2>Proyek Saya</h2>
+        <div class="projects-grid">
+          <div class="project-card" data-project="dashboard">
+            <div class="project-image">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <div class="project-info">
+              <h3>Dashboard Analisis Data</h3>
+              <p>
+                Membuat dashboard Excel interaktif untuk analisis data penjualan
+                dengan chart lanjutan dan pivot tables.
+              </p>
+              <div class="project-badges">
+                <span>Excel</span>
+                <span>VBA</span>
+                <span>Analisis Data</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-project="portfolio">
+            <div class="project-image">
+              <i class="fas fa-globe"></i>
+            </div>
+            <div class="project-info">
+              <h3>Website Portfolio Responsif</h3>
+              <p>
+                Membangun website portfolio modern dan responsif menggunakan
+                HTML, CSS, dan JavaScript dengan animasi halus.
+              </p>
+              <div class="project-badges">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-project="task">
+            <div class="project-image">
+              <i class="fas fa-tasks"></i>
+            </div>
+            <div class="project-info">
+              <h3>Sistem Manajemen Tugas</h3>
+              <p>
+                Mengembangkan aplikasi manajemen tugas berbasis web dengan
+                operasi CRUD dan local storage.
+              </p>
+              <div class="project-badges">
+                <span>JavaScript</span>
+                <span>Local Storage</span>
+                <span>CRUD</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-project="finance">
+            <div class="project-image">
+              <i class="fas fa-calculator"></i>
+            </div>
+            <div class="project-info">
+              <h3>Kalkulator Keuangan</h3>
+              <p>
+                Membuat kalkulator keuangan berbasis Excel untuk perhitungan
+                pinjaman dan proyeksi investasi.
+              </p>
+              <div class="project-badges">
+                <span>Excel</span>
+                <span>Formulas</span>
+                <span>Finansial</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Hubungi Saya</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <p>denicall073@email.com</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <p>+62 85750336426</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Jakarta, Indonesia</p>
+            </div>
+            <div class="social-links">
+              <a
+                href="https://instagram.com/denirey19"
+                class="social-link"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+
+              <!-- WhatsApp -->
+              <a
+                href="https://wa.me/6285750336426"
+                class="social-link"
+                target="_blank"
+                aria-label="WhatsApp"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/deni-deni-3bb25a412"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="https://github.com/Denimaba24"
+                class="social-link"
+                target="_blank"
+                aria-label="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+
+          </div>
+          <form class="contact-form">
+            <div class="form-group">
+              <input type="text" placeholder="Nama Anda" required />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email Anda" required />
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Kirim Pesan</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2026 DENI. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
